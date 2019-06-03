@@ -1,4 +1,3 @@
-// Packages:
 const Discord = require('discord.js'); // Discord Package
 const { User, MessageMentions } = require('discord.js') // Disocrd Package Classes
 //const Canvas = require('canvas-prebuilt'); // Canvas Package for photo stuffs
