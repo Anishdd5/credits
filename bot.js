@@ -5,7 +5,7 @@ var client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Welcome in servr Anis ${client.user.tag}!`);
 });
-var prefix = '//'
+var prefix = '#'
 
 client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
@@ -59,7 +59,7 @@ client.on('ready', () => {
 });
 client.on('ready', function(){
     var ms = 100000 ;
-    var setGame = [`[ //help ]`];   
+    var setGame = [`[ #help ]`];   
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -84,7 +84,7 @@ if (message.content.startsWith(prefix + 'help')) { //Anis_hdd - [ ANIS_Malumuat]
 -⚠ صيانه كل يوم
 -💵 مجاني بل كامل 
 -📚 البوت عربي و سيتم اضافه اللغه النكليزية
-¤ [Aռɨֆ_ʍǟʟʊʍʏǟτ|ɢǟʍϵrツ  #0976البوت خاص ب] ¤
+¤ [Itz Moh M Y#1445البوت خاص ب] ¤
 **
         ***__General orders__***
 **
@@ -189,7 +189,7 @@ client.on('message', message => {
     }
 });
 client.on('message', message => {
-    var prefix = "//"
+    var prefix = "#"
 var args = message.content.split(" ").slice(1);    
 if(message.content.startsWith(prefix + 'id')) {
 var year = message.author.createdAt.getFullYear()
@@ -241,7 +241,7 @@ message.channel.send({embed});
 
 });
 client.on('message', function(msg) {
-    const prefix = '//'
+    const prefix = '='
     if(msg.content.startsWith (prefix  + 'server')) {
       let embed = new Discord.RichEmbed()
       .setColor('RED')
@@ -329,7 +329,7 @@ if (message.content.startsWith("kick")) {
     message.channel.send("تم أعطاء كيك الى : " + mention.tag);
 };
 });
-var prefix = "//"
+var prefix = "#"
     client.on('message', message => {
       if (message.author.x5bz) return;
       if (!message.content.startsWith(prefix)) return;
@@ -370,7 +370,7 @@ var prefix = "//"
     });
 
 client.on('message', message => {
-	var prefix = "//";
+	var prefix = "#";
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'clear')) {
 if(!message.channel.guild) return message.channel.send('**This Command is Just For Servers**').then(m => m.delete(5000));
@@ -1019,7 +1019,7 @@ client.on('message' , message => {
 };     
 });
 			
-			const replyForMention = [   "**Hi For More Informations Type ||-*//help*-||♥**",  ]
+			const replyForMention = [   "**Hi For More Informations Type ||-*#help*-||♥**",  ]
 client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
@@ -1029,7 +1029,7 @@ client.on('message', message=> {
 });
 
 client.on('message' , message => {
-  var prefix = "//";
+  var prefix = "#";
   if(message.author.bot) return;
  
   if(message.content.startsWith(prefix + "xo")) {
@@ -1093,7 +1093,7 @@ client.on('message' , message => {
 }
  });
  
- var prefix = "//";
+ var prefix = "#";
 
 client.on('message',async message => {
   var room;
@@ -1616,7 +1616,7 @@ client.on('message', message => {
 });		 
 
 client.on('message', message => {
-    var prefix = "//";
+    var prefix = "#";
     if(message.author.bot) return;
     var name1 = message.mentions.users.first();
     var suggest = message.content.split(' ').slice(2).join(' ');
@@ -1694,7 +1694,7 @@ client.on('message', message => {
 
 client.on('message', async message =>{
   if (message.author.boss) return;
-	var prefix = "//";
+	var prefix = "-";
 
 if (!message.content.startsWith(prefix)) return;
 	let command = message.content.split(" ")[0];
