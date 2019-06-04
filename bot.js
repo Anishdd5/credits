@@ -84,7 +84,7 @@ if (message.content.startsWith(prefix + 'help')) { //Anis_hdd - [ ANIS_Malumuat]
 -⚠ صيانه كل يوم
 -💵 مجاني بل كامل 
 -📚 البوت عربي و سيتم اضافه اللغه النكليزية
-¤ [Itz Moh M Y#1445البوت خاص ب] ¤
+¤ [Aռɨֆ_ʍǟʟʊʍʏǟτ|ɢǟʍϵrツ  #0976البوت خاص ب] ¤
 **
         ***__General orders__***
 **
@@ -1789,51 +1789,6 @@ client.on('message', async message => {
        
     }
 })
-
-console.log("Welcome Again !");
-
-client.on('ready', () => {
-    client.user.setStatus('idle');
-});
-
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         Spring SERVER
-
-                                 [ https://discord.gg/Yt7NYZ ] **`)
-}).catch(console.error)
-})
-
-client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**
-      حياك الله ي بعد راسي
-       خش بتنورنا فعاليات وكل شيء حلو موجود !
-        ي بعد عيني الرابط تحت
-         Spring SERVER
-
-                                 [ https://discord.gg/Yt7NYZ ] **`)
-}).catch(console.error)
-})
-var AsciiTable = require('ascii-data-table').default
-client.on('message', message =>{
-
-    if(message.content.startsWith(prefix + "roles")){
-        ros=message.guild.roles.size,
-        data = [['Rank', 'RoleName']]
-        for(let i =0;i<ros;i++){
-            if(message.guild.roles.array()[i].id !== message.guild.id){
-         data.push([i,`${message.guild.roles.filter(r => r.position == ros-i).map(r=>r.name)}`])
-        }}
-        let res = AsciiTable.table(data)
-
-        message.channel.send(`**\`\`\`xl\n${res}\`\`\`**`);
-    }
-});
 
 const speed = [
     {
