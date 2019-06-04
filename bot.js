@@ -59,7 +59,7 @@ client.on('ready', () => {
 });
 client.on('ready', function(){
     var ms = 100000 ;
-    var setGame = [`[ #help ]`];   
+    var setGame = [`[ //help ]`];   
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -1019,7 +1019,7 @@ client.on('message' , message => {
 };     
 });
 			
-			const replyForMention = [   "**Hi For More Informations Type ||-*#help*-||♥**",  ]
+			const replyForMention = [   "**Hi For More Informations Type ||-*//help*-||♥**",  ]
 client.on('message', message=> {
     if (message.author.bot) return;
     if (message.isMentioned(client.user))
